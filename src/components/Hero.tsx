@@ -1,4 +1,4 @@
-import Typewriter from "./TypeWriter"
+import Typewriter from "./Typewriter"
 import { useState } from "react"
 
 export default function Hero() {
