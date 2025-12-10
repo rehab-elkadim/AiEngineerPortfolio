@@ -23,7 +23,7 @@ export default function Projects() {
       offer: (
         <>
           A deep-learning LSTM forecasting engine with{" "}
-          <span className="text-green-400 font-semibold">0.95+ accuracy</span>.
+          <span className="text-green-400 font-semibold">%95+ accuracy</span>.
           Tracks patterns humans miss — delivering stronger, cleaner analysis.
         </>
       ),
@@ -138,19 +138,23 @@ function ProjectCard({ title, hook, offer, video, link }: Project) {
         className="w-full md:w-[48%] rounded-[2rem] overflow-hidden cursor-pointer"
       >
         <video
-          ref={videoRef}
-          src={video}
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          className="w-full h-full object-cover"
-          onMouseEnter={(e) => e.currentTarget.play()}
-          onMouseLeave={(e) => {
-            e.currentTarget.pause()
-            e.currentTarget.currentTime = 0
-          }}
-        />
+  key={video}
+  ref={videoRef}
+  src={video}
+  muted
+  loop
+  playsInline
+  preload="none"
+  poster={`/posters/${title}.jpg`}
+  className="w-full h-auto max-h-[450px] object-cover"
+  onMouseEnter={(e) => e.currentTarget.play()}
+  onMouseLeave={(e) => {
+    e.currentTarget.pause()
+    e.currentTarget.currentTime = 0
+  }}
+/>
+
+
       </a>
 
       {/* TEXT SIDE */}

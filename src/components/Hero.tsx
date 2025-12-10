@@ -8,16 +8,20 @@ export default function Hero() {
     <div className="relative w-full h-screen overflow-hidden" id="hero">
 
       {/* Background video */}
-      <video
-        className="absolute inset-0 w-full h-full object-cover"
-        autoPlay
-        muted
-        playsInline
-        preload="auto"
-        onPlay={() => setStartTyping(true)}
-      >
-        <source src="/5.webm" type="video/webm" />
-      </video>
+     <video
+  className="absolute inset-0 w-full h-full object-cover"
+  autoPlay
+  muted
+  playsInline
+  disablePictureInPicture
+  preload="none"
+  poster="/posters/hero.jpg"
+  onPlay={() => setStartTyping(true)}
+>
+  <source src="/5.webm" type="video/webm" />
+</video>
+
+
 
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40"></div>
