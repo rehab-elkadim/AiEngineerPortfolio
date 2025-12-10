@@ -107,3 +107,75 @@ code {
   }
 }
 
+/* Loader background */
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.6s ease;
+}
+
+.loader-overlay.hide {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* AI TEXT with zoom */
+.ai-loader-zoom {
+  position: relative;
+  font-family: 'Future', sans-serif;
+  font-size: 84px;
+  font-weight: 700;
+  letter-spacing: 10px;
+  color: #ffffffd9;
+  text-transform: uppercase;
+  animation: zoomIn 2.2s ease forwards;
+  overflow: hidden;
+}
+
+/* Zoom in animation */
+@keyframes zoomIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.85);
+  }
+  40% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+/* Square background for the chip glance */
+.ai-loader-zoom .glance {
+  position: absolute;
+  top: -80%;
+  left: -80%;
+  width: 200px;
+  height:400px;
+  background: linear-gradient(
+    135deg,
+    transparent 40%,
+    rgba(255, 255, 255, 0.08) 47%,
+    rgba(255, 255, 255, 0.22) 50%,
+    rgba(255, 255, 255, 0.08) 53%,
+    transparent 60%
+  );
+  animation: chipSweep 2.2s ease-in-out forwards;
+  filter: blur(8px);
+}
+
+
+@keyframes chipSweep {
+  0% {
+    transform: translate(-50%, -50%);
+  }
+  100% {
+    transform: translate(50%, 50%);
+  }
+}
+

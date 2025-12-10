@@ -13,7 +13,7 @@ export default function Projects() {
           Fully automated. Sends data directly into Excel or your CRM.
         </>
       ),
-      video: "/7.mp4",
+      video: "/7.webm",
       link: "https://github.com/Ammar-Maamoun/Let-there-be-mind/blob/main/Scraping-template.py",
     },
 
@@ -27,7 +27,7 @@ export default function Projects() {
           Tracks patterns humans miss — delivering stronger, cleaner analysis.
         </>
       ),
-      video: "/trading1.mp4",
+      video: "/trading1.webm",
       link: "https://github.com/Ammar-Maamoun/Let-there-be-mind/blob/Yahoo-stock-prediction/README.md",
     },
 
@@ -41,7 +41,7 @@ export default function Projects() {
           Perfect for call centers, chatbots, UX and telehealth.
         </>
       ),
-      video: "/emotions1.mp4",
+      video: "/emotions1.webm",
       link: "https://github.com/Ammar-Maamoun/CodeAlpha/blob/main/Emotions%20Speech%20recognition%20project.py",
     },
 
@@ -57,7 +57,7 @@ export default function Projects() {
           Built for Binance / MT4 / MT5.
         </>
       ),
-      video: "/trading.mp4",
+      video: "/trading.webm",
       link: "https://github.com/Ammar-Maamoun/Trading_bot/blob/main/trade_bot_crypto_ibkr.py",
     },
 
@@ -71,7 +71,7 @@ export default function Projects() {
           Reduce waste. Target smarter. Scale faster.
         </>
       ),
-      video: "/90.mp4",
+      video: "/90.webm",
       link: "https://github.com/Ammar-Maamoun/Let-there-be-mind/tree/Bank-marketing",
     },
   ]

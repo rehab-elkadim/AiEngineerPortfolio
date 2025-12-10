@@ -13,9 +13,10 @@ export default function Hero() {
         autoPlay
         muted
         playsInline
+        preload="auto"
         onPlay={() => setStartTyping(true)}
       >
-        <source src="/5.mp4" type="video/mp4" />
+        <source src="/5.webm" type="video/webm" />
       </video>
 
       {/* Overlay */}
